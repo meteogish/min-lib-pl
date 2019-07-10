@@ -1,0 +1,25 @@
+name: angular_app
+description: A web app that uses AngularDart
+version: 0.0.1
+
+environment:
+  sdk: '>=2.1.0 <3.0.0'
+
+dependencies:
+  angular:
+  angular_forms:
+  angular_router:
+  http:
+  stream_transform:  
+  ng_bootstrap:
+  angular_components:
+  skawa_material_components:
+  json_annotation:
+
+dev_dependencies:
+  angular_test: 
+  build_runner:
+  build_test:
+  build_web_compilers:
+  test:
+  json_serializable:

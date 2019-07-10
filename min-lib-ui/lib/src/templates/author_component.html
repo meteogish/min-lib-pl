@@ -1,0 +1,29 @@
+<!-- <h1>Author {{}}</h1> -->
+
+<material-list *ngIf="books != null">
+    <h3>Books of the author: {{books[0].authors[0].fullName}}</h3>
+    <material-list-item *ngFor="let book of books">
+        <div class="book-item">
+            <div class="book-item-image">
+                <img src="{{book.imageUrl}}" />
+            </div>
+            <div class="book-item-content">
+                <h1>{{book.title}}</h1>
+                <div class="authors">
+                    <h3>Authors: </h3>
+                    <a *ngFor="let author of book.authors; let isLast=last">
+                        <h3>{{author.fullName}}{{isLast ? '' : ',  '}} </h3>
+                    </a>
+                </div>
+                <a>
+                    <h4>Category: {{book.category.name}}</h4>
+                </a>
+                <a>
+                    <h4>Publisher: {{book.publisher.name}}</h4>
+                </a>
+            </div>
+
+        </div>
+    </material-list-item>
+</material-list>
+

@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "**/*.g.*": true,
+        // "**/*hero*":true,
+    }
+}

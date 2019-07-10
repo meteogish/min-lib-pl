@@ -1,0 +1,35 @@
+.book-item {
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+}
+
+.book-item-image img {
+    width: 150px;
+    height: 250px;
+}
+
+.book-item-content {
+    margin: 1%;
+}
+
+.book-item-content .authors {
+    display: flex;
+    flex-direction: row;
+}
+
+.book-item-content .authors h3:first {
+    margin-right: 4px;
+}
+
+.form-control {
+    width: 10%;
+}
+
+.search-control {
+    margin: 1%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
